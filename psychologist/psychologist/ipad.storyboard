@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="aR5-uH-yDN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Happiness View Controller-->
+        <scene sceneID="VPp-3W-Aoh">
+            <objects>
+                <viewController id="pns-fb-ife" customClass="happinessViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tvi-4I-cHP" customClass="faceView">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ipq-gj-3G8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="779" id="0SK-yl-oo1"/>
+                                </constraints>
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqd-QL-oPl">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="Pjp-X6-tY9"/>
+                                    <constraint firstAttribute="height" constant="56" id="jc3-nR-Iqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="add to my dream">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToMyDream:" destination="pns-fb-ife" eventType="touchDown" id="QBv-Cg-HVA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-ak-fdN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="cDk-VF-uwi"/>
+                                    <constraint firstAttribute="height" constant="48" id="f05-Zk-c5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="my favorite dream">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NLt-C8-gwh" kind="popover" identifier="showingDreamlist" popoverAnchorView="vpe-ak-fdN" id="mR3-1Q-guC">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vpe-ak-fdN" firstAttribute="trailing" secondItem="tvi-4I-cHP" secondAttribute="trailing" type="default" id="6oM-KW-Mi3"/>
+                            <constraint firstItem="Ipq-gj-3G8" firstAttribute="top" secondItem="tvi-4I-cHP" secondAttribute="top" type="default" id="75N-JU-sJw"/>
+                            <constraint firstItem="Iqd-QL-oPl" firstAttribute="bottom" secondItem="tvi-4I-cHP" secondAttribute="bottom" type="default" id="KEr-0e-CB9"/>
+                            <constraint firstItem="Iqd-QL-oPl" firstAttribute="trailing" secondItem="tvi-4I-cHP" secondAttribute="trailing" type="default" id="SPm-eI-Es2"/>
+                            <constraint firstItem="vpe-ak-fdN" firstAttribute="top" secondItem="tvi-4I-cHP" secondAttribute="top" constant="43" id="eeY-9W-GEQ"/>
+                            <constraint firstItem="Ipq-gj-3G8" firstAttribute="trailing" secondItem="tvi-4I-cHP" secondAttribute="trailing" type="default" id="tGA-0l-isZ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="faceview" destination="tvi-4I-cHP" id="qxE-yj-F2A"/>
+                        <outlet property="toolbar" destination="Ipq-gj-3G8" id="RGJ-ui-cpj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQj-QY-clY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="814"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gbn-5u-nEU">
+            <objects>
+                <navigationController id="ktP-00-2XK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="tpi-K9-BHo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="m5c-yM-EMq" kind="relationship" relationship="rootViewController" id="O4P-5Q-AZv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAd-H0-24o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1391" y="190"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="dDc-F5-l2u">
+            <objects>
+                <splitViewController id="aR5-uH-yDN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="ktP-00-2XK" kind="relationship" relationship="masterViewController" id="bOh-zK-Jry"/>
+                        <segue destination="pns-fb-ife" kind="relationship" relationship="detailViewController" id="MZS-d1-CUv"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZV-6c-WH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2373" y="659"/>
+        </scene>
+        <!--Rotate View Controller - psychologists-->
+        <scene sceneID="cpP-yZ-b5R">
+            <objects>
+                <viewController id="m5c-yM-EMq" customClass="rotateViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PC-WZ-Uz1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfp-L2-6e1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Dr Pill">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KAM-g5-bpT" kind="push" id="VbS-9q-Zvc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFZ-YT-NP6">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Dr Florid">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pfH-Yi-fht" kind="push" id="dd4-Wo-jgs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wfp-L2-6e1" firstAttribute="top" secondItem="6PC-WZ-Uz1" secondAttribute="top" constant="47" id="H6K-lF-OMl"/>
+                            <constraint firstItem="XFZ-YT-NP6" firstAttribute="leading" secondItem="6PC-WZ-Uz1" secondAttribute="leading" constant="109" id="NYw-9e-i3I"/>
+                            <constraint firstItem="XFZ-YT-NP6" firstAttribute="top" secondItem="6PC-WZ-Uz1" secondAttribute="top" constant="166" id="aHO-Qg-Eap"/>
+                            <constraint firstItem="Wfp-L2-6e1" firstAttribute="leading" secondItem="6PC-WZ-Uz1" secondAttribute="leading" constant="119" id="hgB-ax-hCZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="psychologists" id="fxb-NI-GcO"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOX-NA-TkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-964" y="-738"/>
+        </scene>
+        <!--Psychologist View Controller - Dr Pill-->
+        <scene sceneID="TRE-7Z-Fe1">
+            <objects>
+                <viewController id="KAM-g5-bpT" customClass="psychologistViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5c7-dg-C9D">
+                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIj-IP-5bH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="0OI-V7-ZLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Celebrity">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K0-rX-kQF">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Normal people">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgM-j0-J1F">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Annoying people">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-XX-Shj">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="annoying people">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6K0-rX-kQF" firstAttribute="trailing" secondItem="R2n-XX-Shj" secondAttribute="trailing" type="default" id="1ng-ok-kYu"/>
+                            <constraint firstItem="yIj-IP-5bH" firstAttribute="top" secondItem="5c7-dg-C9D" secondAttribute="top" constant="23" id="7JP-CQ-Yel"/>
+                            <constraint firstItem="yIj-IP-5bH" firstAttribute="leading" secondItem="6K0-rX-kQF" secondAttribute="leading" type="default" id="VTo-eN-5SG"/>
+                            <constraint firstItem="6K0-rX-kQF" firstAttribute="leading" secondItem="R2n-XX-Shj" secondAttribute="leading" type="default" id="Zq7-CT-BQh"/>
+                            <constraint firstItem="6K0-rX-kQF" firstAttribute="trailing" secondItem="yIj-IP-5bH" secondAttribute="trailing" type="default" id="byr-c7-bp1"/>
+                            <constraint firstItem="yIj-IP-5bH" firstAttribute="leading" secondItem="5c7-dg-C9D" secondAttribute="leading" constant="60" id="fU3-4x-9r6"/>
+                            <constraint firstItem="R2n-XX-Shj" firstAttribute="top" secondItem="5c7-dg-C9D" secondAttribute="top" constant="167" id="fs8-5j-6Gr"/>
+                            <constraint firstItem="IgM-j0-J1F" firstAttribute="trailing" secondItem="R2n-XX-Shj" secondAttribute="trailing" type="default" id="i8p-nm-tyr"/>
+                            <constraint firstItem="R2n-XX-Shj" firstAttribute="leading" secondItem="IgM-j0-J1F" secondAttribute="leading" type="default" id="juy-1A-Gn8"/>
+                            <constraint firstItem="IgM-j0-J1F" firstAttribute="top" secondItem="5c7-dg-C9D" secondAttribute="top" constant="242" id="kWj-4r-hKn"/>
+                            <constraint firstItem="6K0-rX-kQF" firstAttribute="top" secondItem="5c7-dg-C9D" secondAttribute="top" constant="90" id="xYU-ui-07Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dr Pill" id="Dhv-Nd-jMU"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaW-Iy-55A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405" y="-538"/>
+        </scene>
+        <!--Psychologist View Controller - Dr Froid-->
+        <scene sceneID="yX2-lg-bIc">
+            <objects>
+                <viewController id="pfH-Yi-fht" customClass="psychologistViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QnU-SX-3M3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="what   did appear in your dream?" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8i-78-CmL">
+                                <color key="textColor" red="0.34415434880000001" green="0.5709493886" blue="0.55378824670000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzO-g2-Nuy">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ate an apple">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eating" destination="pfH-Yi-fht" eventType="touchDown" id="4BL-Fv-B8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMr-aT-ZpN">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="picked up a wallet">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="picking" destination="pfH-Yi-fht" eventType="touchDown" id="NnN-Ba-GXP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4us-0S-iVH">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="a dragon chased me ">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chasingDragon" destination="pfH-Yi-fht" eventType="touchDown" id="7eN-Lo-HJQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b8i-78-CmL" firstAttribute="top" secondItem="QnU-SX-3M3" secondAttribute="top" constant="25" id="2uA-ec-88N"/>
+                            <constraint firstItem="4us-0S-iVH" firstAttribute="top" secondItem="QnU-SX-3M3" secondAttribute="top" constant="187" id="E9j-Cm-bhv"/>
+                            <constraint firstItem="b8i-78-CmL" firstAttribute="leading" secondItem="QnU-SX-3M3" secondAttribute="leading" constant="36" id="IhE-88-f4q"/>
+                            <constraint firstItem="ZzO-g2-Nuy" firstAttribute="leading" secondItem="QnU-SX-3M3" secondAttribute="leading" constant="48" id="cLL-jI-dpv"/>
+                            <constraint firstItem="zMr-aT-ZpN" firstAttribute="trailing" secondItem="4us-0S-iVH" secondAttribute="trailing" type="default" id="ecN-nm-KhA"/>
+                            <constraint firstItem="zMr-aT-ZpN" firstAttribute="trailing" secondItem="ZzO-g2-Nuy" secondAttribute="trailing" type="default" id="hU3-Tq-Z6T"/>
+                            <constraint firstItem="ZzO-g2-Nuy" firstAttribute="top" secondItem="QnU-SX-3M3" secondAttribute="top" constant="70" id="oMj-GD-1GS"/>
+                            <constraint firstItem="ZzO-g2-Nuy" firstAttribute="leading" secondItem="zMr-aT-ZpN" secondAttribute="leading" type="default" id="utD-Yf-zHL"/>
+                            <constraint firstItem="zMr-aT-ZpN" firstAttribute="top" secondItem="QnU-SX-3M3" secondAttribute="top" constant="127" id="y2J-qw-KBL"/>
+                            <constraint firstItem="zMr-aT-ZpN" firstAttribute="leading" secondItem="4us-0S-iVH" secondAttribute="leading" type="default" id="zGS-kF-Y7v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dr Froid" id="sgp-IB-nph"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jo-KR-YnA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405" y="405"/>
+        </scene>
+        <!--Dream Table View Controller-->
+        <scene sceneID="mEG-7h-tfP">
+            <objects>
+                <tableViewController id="NLt-C8-gwh" customClass="DreamTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Wjc-gT-u3O">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="happiness" textLabel="dSu-aJ-2oy" style="IBUITableViewCellStyleDefault" id="cNK-Gb-QAD">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSu-aJ-2oy">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NLt-C8-gwh" id="S2J-6u-O2W"/>
+                            <outlet property="delegate" destination="NLt-C8-gwh" id="coR-sC-y3j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gQC-Ws-a5e"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="200"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Btb-Xf-44t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="251"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="DreamTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DreamTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="faceView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/faceView.h"/>
+        </class>
+        <class className="happinessViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/happinessViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addToMyDream:"/>
+                <relationship kind="outlet" name="faceview" candidateClass="faceView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="psychologistViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/psychologistViewController.h"/>
+        </class>
+        <class className="rotateViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/rotateViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
