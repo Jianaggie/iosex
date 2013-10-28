@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4DD75617556A1800FCDDA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4DD75517556A1800FCDDA7 /* UIKit.framework */; };
+		3D4DD75817556A1800FCDDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4DD75717556A1800FCDDA7 /* Foundation.framework */; };
+		3D4DD75A17556A1800FCDDA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4DD75917556A1800FCDDA7 /* CoreGraphics.framework */; };
+		3D4DD76017556A1800FCDDA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DD75E17556A1800FCDDA7 /* InfoPlist.strings */; };
+		3D4DD76217556A1800FCDDA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DD76117556A1800FCDDA7 /* main.m */; };
+		3D4DD76617556A1800FCDDA7 /* imagariumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DD76517556A1800FCDDA7 /* imagariumAppDelegate.m */; };
+		3D4DD76817556A1800FCDDA7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DD76717556A1800FCDDA7 /* Default.png */; };
+		3D4DD76A17556A1800FCDDA7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DD76917556A1800FCDDA7 /* Default@2x.png */; };
+		3D4DD76C17556A1800FCDDA7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DD76B17556A1800FCDDA7 /* Default-568h@2x.png */; };
+		3D4DD76F17556A1800FCDDA7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DD76D17556A1800FCDDA7 /* MainStoryboard.storyboard */; };
+		3D4DD77217556A1800FCDDA7 /* imagariumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DD77117556A1800FCDDA7 /* imagariumViewController.m */; };
+		3D4DD77A17556A1800FCDDA7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4DD77917556A1800FCDDA7 /* SenTestingKit.framework */; };
+		3D4DD77B17556A1800FCDDA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4DD75517556A1800FCDDA7 /* UIKit.framework */; };
+		3D4DD77C17556A1800FCDDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4DD75717556A1800FCDDA7 /* Foundation.framework */; };
+		3D4DD78417556A1800FCDDA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DD78217556A1800FCDDA7 /* InfoPlist.strings */; };
+		3D4DD78717556A1800FCDDA7 /* imagariumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DD78617556A1800FCDDA7 /* imagariumTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D4DD77D17556A1800FCDDA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4DD74A17556A1800FCDDA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D4DD75117556A1800FCDDA7;
+			remoteInfo = imagarium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D4DD75217556A1800FCDDA7 /* imagarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imagarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4DD75517556A1800FCDDA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D4DD75717556A1800FCDDA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D4DD75917556A1800FCDDA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D4DD75D17556A1800FCDDA7 /* imagarium-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "imagarium-Info.plist"; sourceTree = "<group>"; };
+		3D4DD75F17556A1800FCDDA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D4DD76117556A1800FCDDA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D4DD76317556A1800FCDDA7 /* imagarium-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "imagarium-Prefix.pch"; sourceTree = "<group>"; };
+		3D4DD76417556A1800FCDDA7 /* imagariumAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imagariumAppDelegate.h; sourceTree = "<group>"; };
+		3D4DD76517556A1800FCDDA7 /* imagariumAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imagariumAppDelegate.m; sourceTree = "<group>"; };
+		3D4DD76717556A1800FCDDA7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3D4DD76917556A1800FCDDA7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3D4DD76B17556A1800FCDDA7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3D4DD76E17556A1800FCDDA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3D4DD77017556A1800FCDDA7 /* imagariumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imagariumViewController.h; sourceTree = "<group>"; };
+		3D4DD77117556A1800FCDDA7 /* imagariumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imagariumViewController.m; sourceTree = "<group>"; };
+		3D4DD77817556A1800FCDDA7 /* imagariumTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imagariumTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4DD77917556A1800FCDDA7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3D4DD78117556A1800FCDDA7 /* imagariumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "imagariumTests-Info.plist"; sourceTree = "<group>"; };
+		3D4DD78317556A1800FCDDA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D4DD78517556A1800FCDDA7 /* imagariumTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imagariumTests.h; sourceTree = "<group>"; };
+		3D4DD78617556A1800FCDDA7 /* imagariumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imagariumTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D4DD74F17556A1800FCDDA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4DD75617556A1800FCDDA7 /* UIKit.framework in Frameworks */,
+				3D4DD75817556A1800FCDDA7 /* Foundation.framework in Frameworks */,
+				3D4DD75A17556A1800FCDDA7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4DD77417556A1800FCDDA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4DD77A17556A1800FCDDA7 /* SenTestingKit.framework in Frameworks */,
+				3D4DD77B17556A1800FCDDA7 /* UIKit.framework in Frameworks */,
+				3D4DD77C17556A1800FCDDA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D4DD74917556A1800FCDDA7 = {
+			isa = PBXGroup;
+			children = (
+				3D4DD75B17556A1800FCDDA7 /* imagarium */,
+				3D4DD77F17556A1800FCDDA7 /* imagariumTests */,
+				3D4DD75417556A1800FCDDA7 /* Frameworks */,
+				3D4DD75317556A1800FCDDA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D4DD75317556A1800FCDDA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DD75217556A1800FCDDA7 /* imagarium.app */,
+				3D4DD77817556A1800FCDDA7 /* imagariumTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D4DD75417556A1800FCDDA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DD75517556A1800FCDDA7 /* UIKit.framework */,
+				3D4DD75717556A1800FCDDA7 /* Foundation.framework */,
+				3D4DD75917556A1800FCDDA7 /* CoreGraphics.framework */,
+				3D4DD77917556A1800FCDDA7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D4DD75B17556A1800FCDDA7 /* imagarium */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DD76417556A1800FCDDA7 /* imagariumAppDelegate.h */,
+				3D4DD76517556A1800FCDDA7 /* imagariumAppDelegate.m */,
+				3D4DD76D17556A1800FCDDA7 /* MainStoryboard.storyboard */,
+				3D4DD77017556A1800FCDDA7 /* imagariumViewController.h */,
+				3D4DD77117556A1800FCDDA7 /* imagariumViewController.m */,
+				3D4DD75C17556A1800FCDDA7 /* Supporting Files */,
+			);
+			path = imagarium;
+			sourceTree = "<group>";
+		};
+		3D4DD75C17556A1800FCDDA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DD75D17556A1800FCDDA7 /* imagarium-Info.plist */,
+				3D4DD75E17556A1800FCDDA7 /* InfoPlist.strings */,
+				3D4DD76117556A1800FCDDA7 /* main.m */,
+				3D4DD76317556A1800FCDDA7 /* imagarium-Prefix.pch */,
+				3D4DD76717556A1800FCDDA7 /* Default.png */,
+				3D4DD76917556A1800FCDDA7 /* Default@2x.png */,
+				3D4DD76B17556A1800FCDDA7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D4DD77F17556A1800FCDDA7 /* imagariumTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DD78517556A1800FCDDA7 /* imagariumTests.h */,
+				3D4DD78617556A1800FCDDA7 /* imagariumTests.m */,
+				3D4DD78017556A1800FCDDA7 /* Supporting Files */,
+			);
+			path = imagariumTests;
+			sourceTree = "<group>";
+		};
+		3D4DD78017556A1800FCDDA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DD78117556A1800FCDDA7 /* imagariumTests-Info.plist */,
+				3D4DD78217556A1800FCDDA7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D4DD75117556A1800FCDDA7 /* imagarium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D4DD78A17556A1800FCDDA7 /* Build configuration list for PBXNativeTarget "imagarium" */;
+			buildPhases = (
+				3D4DD74E17556A1800FCDDA7 /* Sources */,
+				3D4DD74F17556A1800FCDDA7 /* Frameworks */,
+				3D4DD75017556A1800FCDDA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imagarium;
+			productName = imagarium;
+			productReference = 3D4DD75217556A1800FCDDA7 /* imagarium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D4DD77717556A1800FCDDA7 /* imagariumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D4DD78D17556A1800FCDDA7 /* Build configuration list for PBXNativeTarget "imagariumTests" */;
+			buildPhases = (
+				3D4DD77317556A1800FCDDA7 /* Sources */,
+				3D4DD77417556A1800FCDDA7 /* Frameworks */,
+				3D4DD77517556A1800FCDDA7 /* Resources */,
+				3D4DD77617556A1800FCDDA7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D4DD77E17556A1800FCDDA7 /* PBXTargetDependency */,
+			);
+			name = imagariumTests;
+			productName = imagariumTests;
+			productReference = 3D4DD77817556A1800FCDDA7 /* imagariumTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D4DD74A17556A1800FCDDA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = imagarium;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = maggie;
+			};
+			buildConfigurationList = 3D4DD74D17556A1800FCDDA7 /* Build configuration list for PBXProject "imagarium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D4DD74917556A1800FCDDA7;
+			productRefGroup = 3D4DD75317556A1800FCDDA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D4DD75117556A1800FCDDA7 /* imagarium */,
+				3D4DD77717556A1800FCDDA7 /* imagariumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D4DD75017556A1800FCDDA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4DD76017556A1800FCDDA7 /* InfoPlist.strings in Resources */,
+				3D4DD76817556A1800FCDDA7 /* Default.png in Resources */,
+				3D4DD76A17556A1800FCDDA7 /* Default@2x.png in Resources */,
+				3D4DD76C17556A1800FCDDA7 /* Default-568h@2x.png in Resources */,
+				3D4DD76F17556A1800FCDDA7 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4DD77517556A1800FCDDA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4DD78417556A1800FCDDA7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4DD77617556A1800FCDDA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D4DD74E17556A1800FCDDA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4DD76217556A1800FCDDA7 /* main.m in Sources */,
+				3D4DD76617556A1800FCDDA7 /* imagariumAppDelegate.m in Sources */,
+				3D4DD77217556A1800FCDDA7 /* imagariumViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4DD77317556A1800FCDDA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4DD78717556A1800FCDDA7 /* imagariumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D4DD77E17556A1800FCDDA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D4DD75117556A1800FCDDA7 /* imagarium */;
+			targetProxy = 3D4DD77D17556A1800FCDDA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D4DD75E17556A1800FCDDA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D4DD75F17556A1800FCDDA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D4DD76D17556A1800FCDDA7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D4DD76E17556A1800FCDDA7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		3D4DD78217556A1800FCDDA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D4DD78317556A1800FCDDA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D4DD78817556A1800FCDDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D4DD78917556A1800FCDDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D4DD78B17556A1800FCDDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "imagarium/imagarium-Prefix.pch";
+				INFOPLIST_FILE = "imagarium/imagarium-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D4DD78C17556A1800FCDDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "imagarium/imagarium-Prefix.pch";
+				INFOPLIST_FILE = "imagarium/imagarium-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3D4DD78E17556A1800FCDDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/imagarium.app/imagarium";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "imagarium/imagarium-Prefix.pch";
+				INFOPLIST_FILE = "imagariumTests/imagariumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3D4DD78F17556A1800FCDDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/imagarium.app/imagarium";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "imagarium/imagarium-Prefix.pch";
+				INFOPLIST_FILE = "imagariumTests/imagariumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D4DD74D17556A1800FCDDA7 /* Build configuration list for PBXProject "imagarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4DD78817556A1800FCDDA7 /* Debug */,
+				3D4DD78917556A1800FCDDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D4DD78A17556A1800FCDDA7 /* Build configuration list for PBXNativeTarget "imagarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4DD78B17556A1800FCDDA7 /* Debug */,
+				3D4DD78C17556A1800FCDDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D4DD78D17556A1800FCDDA7 /* Build configuration list for PBXNativeTarget "imagariumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4DD78E17556A1800FCDDA7 /* Debug */,
+				3D4DD78F17556A1800FCDDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D4DD74A17556A1800FCDDA7 /* Project object */;
+}
