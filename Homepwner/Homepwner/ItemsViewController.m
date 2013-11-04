@@ -11,19 +11,24 @@
 
 @implementation ItemsViewController
 
-@synthesize  headerView=_headerView;
+//@synthesize  headerView=_headerView;
 -(id) init
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if(self){
+        [self.navigationItem setTitle:@"Homepwner"];
        /* for(int i =0 ;i<5;i++)
         {
             [[BNRItemStore sharedStore]createItem];
         }*/
+        UIBarButtonItem * barButtonItem =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
+        [self.navigationItem setRightBarButtonItem:barButtonItem ];
+        [self.navigationItem setLeftBarButtonItem:[self editButtonItem]];
     }
    
     return self;
 }
+/*
 -(UIView *)headerView
 {
     if(!_headerView)
@@ -31,7 +36,21 @@
         [[NSBundle mainBundle]loadNibNamed:@"HeaderView" owner:self options:nil];
     }
     return _headerView;
+}*/
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController * detailviewController = [[DetailViewController alloc]init];
+     [detailviewController setItem:[[[BNRItemStore sharedStore]allItems] objectAtIndex:[indexPath row]]];
+    [[self navigationController] pushViewController:detailviewController animated:YES];
+   
+}
+
+
 -(void)addNewItem:(id)sender{
     BNRItem * item =[[BNRItemStore sharedStore]createItem ];
     int lastrow = [[[BNRItemStore sharedStore]allItems] indexOfObject:item];
@@ -54,7 +73,7 @@
 
     [[BNRItemStore sharedStore]moveItemAtIndex:[sourceIndexPath row] toIndex:[destinationIndexPath row]];
 }
-
+/*
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     return _headerView;
@@ -62,7 +81,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return  [self.headerView bounds].size.height;
-}
+}*/
 /*-(void)viewDidAppear:(BOOL)animated{
     UIImage *image = [UIImage imageNamed:@"mypic2.jpg"];
     UIImageView *backgroundview = [[UIImageView alloc]initWithImage:image];
@@ -86,6 +105,7 @@
     return 2;
 }
 */
+/*
 -(void)toggleEditingMode:(id)sender
 {
     if([self isEditing]){
@@ -98,7 +118,7 @@
         
 }
 }
-
+*/
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     /*

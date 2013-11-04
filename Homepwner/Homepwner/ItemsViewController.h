@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "BNRItem.h"
 #import "BNRItemStore.h"
+#import "DetailViewController.h"
 @interface ItemsViewController : UITableViewController
 
-    @property (nonatomic,strong)IBOutlet  UIView * headerView;
+  //  @property (nonatomic,strong)IBOutlet  UIView * headerView;
 
--(UIView *)headerView;
+//-(UIView *)headerView;
 -(IBAction)addNewItem:(id)sender;
--(IBAction)toggleEditingMode:(id)sender;
+//-(IBAction)toggleEditingMode:(id)sender;
 @end

@@ -11,6 +11,8 @@
 		3D2019D5182542CA00812BC2 /* mypic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D4182542CA00812BC2 /* mypic.jpg */; };
 		3D2019D71825439200812BC2 /* mypic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D61825439200812BC2 /* mypic2.jpg */; };
 		3D2019D918254A8C00812BC2 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D818254A8C00812BC2 /* HeaderView.xib */; };
+		3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2019DB18275F1200812BC2 /* DetailViewController.m */; };
+		3D2019DE18275F1200812BC2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019DC18275F1200812BC2 /* DetailViewController.xib */; };
 		3D43EF31181E96CB007432BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43EF30181E96CB007432BE /* UIKit.framework */; };
 		3D43EF33181E96CB007432BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43EF32181E96CB007432BE /* Foundation.framework */; };
 		3D43EF35181E96CB007432BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43EF34181E96CB007432BE /* CoreGraphics.framework */; };
@@ -30,6 +32,9 @@
 		3D2019D4182542CA00812BC2 /* mypic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mypic.jpg; sourceTree = "<group>"; };
 		3D2019D61825439200812BC2 /* mypic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mypic2.jpg; sourceTree = "<group>"; };
 		3D2019D818254A8C00812BC2 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		3D2019DA18275F1200812BC2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3D2019DB18275F1200812BC2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3D2019DC18275F1200812BC2 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		3D43EF2D181E96CB007432BE /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D43EF30181E96CB007432BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3D43EF32181E96CB007432BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +108,9 @@
 				3D2019D11822939A00812BC2 /* BNRItemStore.h */,
 				3D2019D21822939A00812BC2 /* BNRItemStore.m */,
 				3D2019D818254A8C00812BC2 /* HeaderView.xib */,
+				3D2019DA18275F1200812BC2 /* DetailViewController.h */,
+				3D2019DB18275F1200812BC2 /* DetailViewController.m */,
+				3D2019DC18275F1200812BC2 /* DetailViewController.xib */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -182,6 +190,7 @@
 				3D2019D5182542CA00812BC2 /* mypic.jpg in Resources */,
 				3D2019D71825439200812BC2 /* mypic2.jpg in Resources */,
 				3D2019D918254A8C00812BC2 /* HeaderView.xib in Resources */,
+				3D2019DE18275F1200812BC2 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +206,7 @@
 				3D43EF4F181E9D4E007432BE /* ItemsViewController.m in Sources */,
 				3D43EF52181EA555007432BE /* BNRItem.m in Sources */,
 				3D2019D31822939A00812BC2 /* BNRItemStore.m in Sources */,
+				3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
