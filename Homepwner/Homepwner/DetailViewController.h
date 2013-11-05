@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BNRImageStore.h"
 @class BNRItem;
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate>
 {
     
     __weak IBOutlet UITextField *nameField;
     __weak IBOutlet UITextField *serialNumberField;
     __weak IBOutlet UITextField *valueField;
     __weak IBOutlet UILabel *datelabel;
+    __weak IBOutlet UIImageView *imageview;
 }
+- (IBAction)takePicture:(id)sender;
+- (IBAction)backgroundTapped:(id)sender;
 @property (weak ,nonatomic)BNRItem * item;
+//@property (nonatomic,weak) NSString * key;
 @end
+
