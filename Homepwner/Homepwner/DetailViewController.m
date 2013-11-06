@@ -8,7 +8,7 @@
 
 #import "DetailViewController.h"
 #import "BNRItem.h"
-
+#import "ImagePicker.h"
 
 
 @implementation DetailViewController
@@ -17,8 +17,16 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [[self view]setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+    UIColor * col;
+    if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+    {
+        col=[UIColor colorWithRed: 0.875 green:0.88 blue:0.91 alpha:1];
+    }
+    else
+        col = [UIColor groupTableViewBackgroundColor];
+    [[self view]setBackgroundColor:col];
 }
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [nameField setText:[item  itemName]];
@@ -48,13 +56,14 @@
     [self.navigationItem setTitle:[item itemName]];
 }
 - (IBAction)takePicture:(id)sender {
-    UIImagePickerController * imagePicker = [[UIImagePickerController alloc]init];
+    ImagePicker * imagePicker =[[ImagePicker alloc]init];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
     } else {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }
     [imagePicker setDelegate:self];
+    [imagePicker setAllowsEditing:YES];
     [self presentViewController:imagePicker animated:YES completion:Nil];
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -71,7 +80,7 @@
     {
         [[BNRImageStore sharedstore]deleteImageforKey:[item imageKey]];
     }
-    UIImage * image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    UIImage * image = [info objectForKey:UIImagePickerControllerEditedImage];
     CFUUIDRef  newuniqueId = CFUUIDCreate(kCFAllocatorDefault);//create the unique id
     CFStringRef  newUniqueIdString = CFUUIDCreateString(kCFAllocatorDefault, newuniqueId);
     NSString * Imagekey = (__bridge NSString *) newUniqueIdString;//(_bridge NSString *)newUniqueIdString;

@@ -13,6 +13,9 @@
 		3D2019D918254A8C00812BC2 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D818254A8C00812BC2 /* HeaderView.xib */; };
 		3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2019DB18275F1200812BC2 /* DetailViewController.m */; };
 		3D2019DE18275F1200812BC2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019DC18275F1200812BC2 /* DetailViewController.xib */; };
+		3D3289B71829D9D5002024F1 /* DetailviewController-ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */; };
+		3D3289BD1829F8AA002024F1 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3289BC1829F8AA002024F1 /* NavigationController.m */; };
+		3D3289C01829FB2C002024F1 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3289BF1829FB2C002024F1 /* ImagePicker.m */; };
 		3D43EF31181E96CB007432BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43EF30181E96CB007432BE /* UIKit.framework */; };
 		3D43EF33181E96CB007432BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43EF32181E96CB007432BE /* Foundation.framework */; };
 		3D43EF35181E96CB007432BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43EF34181E96CB007432BE /* CoreGraphics.framework */; };
@@ -37,6 +40,11 @@
 		3D2019DA18275F1200812BC2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3D2019DB18275F1200812BC2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3D2019DC18275F1200812BC2 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailviewController-ipad.xib"; sourceTree = "<group>"; };
+		3D3289BB1829F8AA002024F1 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		3D3289BC1829F8AA002024F1 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		3D3289BE1829FB2C002024F1 /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePicker.h; sourceTree = "<group>"; };
+		3D3289BF1829FB2C002024F1 /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePicker.m; sourceTree = "<group>"; };
 		3D43EF2D181E96CB007432BE /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D43EF30181E96CB007432BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3D43EF32181E96CB007432BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +128,11 @@
 				3D2019DC18275F1200812BC2 /* DetailViewController.xib */,
 				3D6D814018289787007A920D /* BNRImageStore.h */,
 				3D6D814118289787007A920D /* BNRImageStore.m */,
+				3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */,
+				3D3289BB1829F8AA002024F1 /* NavigationController.h */,
+				3D3289BC1829F8AA002024F1 /* NavigationController.m */,
+				3D3289BE1829FB2C002024F1 /* ImagePicker.h */,
+				3D3289BF1829FB2C002024F1 /* ImagePicker.m */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -194,6 +207,7 @@
 			files = (
 				3D43EF3B181E96CB007432BE /* InfoPlist.strings in Resources */,
 				3D43EF43181E96CB007432BE /* Default.png in Resources */,
+				3D3289B71829D9D5002024F1 /* DetailviewController-ipad.xib in Resources */,
 				3D43EF45181E96CB007432BE /* Default@2x.png in Resources */,
 				3D43EF47181E96CB007432BE /* Default-568h@2x.png in Resources */,
 				3D2019D5182542CA00812BC2 /* mypic.jpg in Resources */,
@@ -215,8 +229,10 @@
 				3D43EF4F181E9D4E007432BE /* ItemsViewController.m in Sources */,
 				3D43EF52181EA555007432BE /* BNRItem.m in Sources */,
 				3D2019D31822939A00812BC2 /* BNRItemStore.m in Sources */,
+				3D3289BD1829F8AA002024F1 /* NavigationController.m in Sources */,
 				3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */,
 				3D6D814218289787007A920D /* BNRImageStore.m in Sources */,
+				3D3289C01829FB2C002024F1 /* ImagePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homepwner/Homepwner-Prefix.pch";
 				INFOPLIST_FILE = "Homepwner/Homepwner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -307,7 +325,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homepwner/Homepwner-Prefix.pch";
 				INFOPLIST_FILE = "Homepwner/Homepwner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

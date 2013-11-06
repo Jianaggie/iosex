@@ -8,6 +8,7 @@
 
 #import "HomepwnerAppDelegate.h"
 #import "ItemsViewController.h"
+#import "NavigationController.h"
 
 @implementation HomepwnerAppDelegate
 
@@ -17,7 +18,7 @@
     // Override point for customization after application launch.
     ItemsViewController *itemViewController = [[ItemsViewController alloc]init];
     
-    UINavigationController * nav =[[UINavigationController alloc] initWithRootViewController:itemViewController];
+    UINavigationController * nav =[[NavigationController alloc] initWithRootViewController:itemViewController];
     
     [[self window]setRootViewController:nav];
     self.window.backgroundColor = [UIColor whiteColor];
