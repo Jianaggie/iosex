@@ -1,4 +1,4 @@
-//
+        //
 //  ItemsViewController.m
 //  Homepwner
 //
@@ -7,7 +7,7 @@
 //
 
 #import "ItemsViewController.h"
-
+#import "NavigationController.h"
 
 @implementation ItemsViewController
 
@@ -44,7 +44,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailViewController * detailviewController = [[DetailViewController alloc]init];
+    DetailViewController * detailviewController = [[DetailViewController alloc]initForNewItem:NO];
      [detailviewController setItem:[[[BNRItemStore sharedStore]allItems] objectAtIndex:[indexPath row]]];
     [[self navigationController] pushViewController:detailviewController animated:YES];
    
@@ -53,9 +53,20 @@
 
 -(void)addNewItem:(id)sender{
     BNRItem * item =[[BNRItemStore sharedStore]createItem ];
-    int lastrow = [[[BNRItemStore sharedStore]allItems] indexOfObject:item];
+   /* int lastrow = [[[BNRItemStore sharedStore]allItems] indexOfObject:item];
     NSIndexPath * ip= [NSIndexPath indexPathForRow:lastrow inSection:0];
-    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];
+    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];*/
+    DetailViewController * detailcontroller = [[DetailViewController alloc]initForNewItem:YES];
+    [detailcontroller setItem:item];
+    
+    [detailcontroller setReloadBlock:^{[[self tableView]reloadData];}];
+     
+     NavigationController *nav = [[NavigationController alloc]initWithRootViewController:detailcontroller];
+    [nav setModalPresentationStyle:UIModalPresentationFormSheet];
+ 
+    //[nav setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [nav setModalTransitionStyle:UIModalTransitionStylePartialCurl];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
