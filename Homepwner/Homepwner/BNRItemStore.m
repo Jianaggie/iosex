@@ -7,6 +7,7 @@
 //
 
 #import "BNRItemStore.h"
+#import  "BNRImageStore.h"
 
 @implementation BNRItemStore
 + (BNRItemStore *)sharedStore{
@@ -20,10 +21,16 @@
 {
     return [self sharedStore];
 }
+-(BOOL) saveChanges
+{
+    NSString * path= [self itemsArchivePath];
+    return [NSKeyedArchiver archiveRootObject:allItems toFile:path];
+}
 -(id)init
 {
     self = [super init];
     if(self){
+        allItems=[NSKeyedUnarchiver unarchiveObjectWithFile:[self itemsArchivePath]];
         if(!allItems)
         {
             allItems = [[NSMutableArray alloc]init];
@@ -32,7 +39,13 @@
     return self;
     
 }
-
+-(NSString *)itemsArchivePath
+{
+    NSArray * directories= NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString * domaindirector=[directories objectAtIndex:0];
+    return [domaindirector stringByAppendingPathComponent:@"items.archive"];
+   // return  domaindirector;
+}
 -(NSArray *) allItems{
     return allItems;
 }
@@ -43,7 +56,9 @@
 }
 -(void)removeItem:(BNRItem *)item
 {
-    [allItems removeObject:item];
+    // remove the image
+    [[BNRImageStore sharedstore]deleteImageforKey:[item imageKey]];
+    [allItems removeObjectIdenticalTo:item];
 }
 -(void)moveItemAtIndex:(int )from toIndex:(int) to
 {

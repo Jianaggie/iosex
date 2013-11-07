@@ -28,8 +28,8 @@
    
     return self;
 }
-/*
--(UIView *)headerView
+
+/*-(UIView *)headerView
 {
     if(!_headerView)
     {
@@ -62,9 +62,9 @@
     [detailcontroller setReloadBlock:^{[[self tableView]reloadData];}];
      
      NavigationController *nav = [[NavigationController alloc]initWithRootViewController:detailcontroller];
-    //[nav setModalPresentationStyle:UIModalPresentationFormSheet];
-    //[nav setModalPresentationStyle:UIModalPresentationCurrentContext];
-    //[nav setDefinesPresentationContext:YES];
+     [nav setModalPresentationStyle:UIModalPresentationFormSheet];
+    // [nav setModalPresentationStyle:UIModalPresentationCurrentContext];
+    //[self setDefinesPresentationContext:YES];
     [nav setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     //[nav setModalTransitionStyle:UIModalTransitionStylePartialCurl];
     [self presentViewController:nav animated:YES completion:nil];
