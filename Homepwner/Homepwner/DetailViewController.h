@@ -18,6 +18,8 @@
     __weak IBOutlet UILabel *datelabel;
     __weak IBOutlet UIImageView *imageview;
     UIPopoverController * Imagepopover;
+    UIPopoverController * Imagepopover2;
+    __weak IBOutlet UIButton *typeButton;
 }
 - (IBAction)takePicture:(id)sender;
 -(id)initForNewItem:(BOOL)isNew;

@@ -10,6 +10,7 @@
 #import "BNRItem.h"
 #import "ImagePicker.h"
 #import "BNRItemStore.h"
+#import  "AssetTypePicker.h"
 
 @implementation DetailViewController
 @synthesize item,reloadBlock;
@@ -26,6 +27,19 @@
     @throw [NSException exceptionWithName:@"wrong initializer" reason:@"please use method initForNewItem" userInfo:nil];
     return nil;
 }
+- (IBAction)showType:(id)sender {
+    [[self view]endEditing:YES];
+    AssetTypePicker * viewController = [[AssetTypePicker alloc]init];
+    [viewController setItem:item];
+    if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+    {
+        Imagepopover2 = [[UIPopoverController alloc]initWithContentViewController:viewController];
+        [Imagepopover2 presentPopoverFromRect:[sender bounds] inView:[self view] permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    }
+    else
+    [[self navigationController]pushViewController:viewController animated:YES];
+}
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     UIColor * col;
@@ -60,24 +74,31 @@
 {
     [nameField setText:[item  itemName]];
     [serialNumberField setText:[item serialNumber]];
-    [valueField setText:[NSString stringWithFormat:@"%d",[item valueInDollars]]];
+    [valueField setText:[NSString stringWithFormat:@"%d",[item valueInDollar]]];
     NSDateFormatter * dateFormatter =[[NSDateFormatter alloc]init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-    [datelabel setText:[dateFormatter stringFromDate:[item dateCreated]]];
+    NSDate *date =[NSDate dateWithTimeIntervalSinceReferenceDate:[item dateCreated]];
+    [datelabel setText:[dateFormatter stringFromDate:date]];
     UIImage * image = [[BNRImageStore sharedstore]imageForKey:[item imageKey]];
     if(image)
        [imageview setImage:image];
     else
         [imageview setImage:nil];
+    //set the button text
+    NSString * lablename =[[item assetType]valueForKey:@"lable"];
+    if(!lablename)
+        lablename =@"none";
+    [typeButton setTitle:lablename forState:UIControlStateNormal];
 }
+
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [self.view endEditing:YES];
     [item setItemName:[nameField text]];
     [item setSerialNumber:[serialNumberField text]];
-    [item setValueInDollars:[[valueField text]intValue]];
+    [item setValueInDollar:[[valueField text]intValue]];
 }
 -(void)setItem:(BNRItem *)i
 {
@@ -99,12 +120,12 @@
     }
     [imagePicker setDelegate:self];
     [imagePicker setAllowsEditing:YES];
-    if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+   /* if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
     {
         Imagepopover = [[UIPopoverController alloc]initWithContentViewController:imagePicker];
         [Imagepopover presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     }
-    else
+    else*/
         
         [self presentViewController:imagePicker animated:YES completion:Nil];
 }
@@ -121,6 +142,7 @@
 {
     NSLog(@"pop over controller is dismissed!");
     Imagepopover = nil;
+   
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -135,6 +157,7 @@
     NSString * Imagekey = (__bridge NSString *) newUniqueIdString;//(_bridge NSString *)newUniqueIdString;
     //self.key = Imagekey;
     [item  setImageKey:Imagekey];
+    [item setThumbnailDataFromImg:image];
     CFRelease(newUniqueIdString);
     CFRelease(newuniqueId);
     [[BNRImageStore sharedstore]setImage:image forKey:[item imageKey]];

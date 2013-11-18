@@ -10,11 +10,13 @@
 #import "BNRItem.h"
 #import "BNRItemStore.h"
 #import "DetailViewController.h"
-@interface ItemsViewController : UITableViewController
-
+@interface ItemsViewController : UITableViewController <UIPopoverControllerDelegate>
+{
   //  @property (nonatomic,strong)IBOutlet  UIView * headerView;
-
+    UIPopoverController * Imagepopover;
+}
 //-(UIView *)headerView;
 -(IBAction)addNewItem:(id)sender;
+-(void)showImage:(id)sender atIndex:(NSIndexPath*)path;
 //-(IBAction)toggleEditingMode:(id)sender;
 @end

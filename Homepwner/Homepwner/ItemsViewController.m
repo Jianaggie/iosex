@@ -8,10 +8,37 @@
 
 #import "ItemsViewController.h"
 #import "NavigationController.h"
-
+#import "HomepwnerItemCell.h"
+#import "imageViewController.h"
 @implementation ItemsViewController
 
 //@synthesize  headerView=_headerView;
+-(void) showImage:(id)sender atIndex:(NSIndexPath*)path{
+    //NSLog(@"show the method");
+    imageViewController * imagecontroller = [[imageViewController alloc]init];
+    if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+    {
+        BNRItem * item = [[[BNRItemStore sharedStore]allItems ]objectAtIndex:[path row]];
+        imagecontroller.image = [[BNRImageStore sharedstore]imageForKey:[item imageKey]];
+        if(!imagecontroller.image)
+            return;
+        CGRect rect = [[self view]convertRect:[sender bounds] fromView:sender];
+       Imagepopover = [[UIPopoverController alloc]initWithContentViewController:imagecontroller];
+      
+        [Imagepopover setDelegate:self];
+        [Imagepopover setPopoverContentSize:CGSizeMake(600, 600)];
+        
+        [Imagepopover presentPopoverFromRect:rect inView:[self view] permittedArrowDirections:UIPopoverArrowDirectionAny
+                                    animated:YES];
+    }
+}
+
+-(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    //[popoverController dismissPopoverAnimated:YES];
+    popoverController =nil;
+}
+
 -(id) init
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
@@ -27,6 +54,12 @@
     }
    
     return self;
+}
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    UINib * cell=[UINib nibWithNibName:@"HomepwnerItemCell" bundle:nil];
+    [[self tableView]registerNib:cell forCellReuseIdentifier:@"HomepwnerItemCell"];
 }
 
 /*-(UIView *)headerView
@@ -160,10 +193,11 @@
 {
     //create a cell
     //set the cell textlabel
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"UITableviewcell"];
+    /*UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"UITableviewcell"];
     if(!cell){
           cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableviewcell"];
-    }
+    }*/
+    HomepwnerItemCell* cell = [tableView dequeueReusableCellWithIdentifier:@"HomepwnerItemCell"];
    /* int section1=-1;
     int section2=-1;
     int index = [indexPath row];
@@ -202,8 +236,22 @@ else{
 }*/
     BNRItem * item;
             item =[[[BNRItemStore sharedStore]allItems] objectAtIndex:[indexPath row] ];
-    if(item)
-        [cell.textLabel setText:[item description]];
+    if(item){
+        [cell setTableview:[self tableView]];
+        [cell setController:self];
+        [cell.nameLable   setText:[item itemName]];
+        [cell.serialnumberLable setText:[item serialNumber]];
+        if([item valueInDollar]>50)
+        {
+            [cell.valueLable setTextColor:[UIColor greenColor]];
+        }
+        else
+        {
+            [cell.valueLable setTextColor:[UIColor redColor]];
+        }
+        [cell.valueLable  setText:[NSString stringWithFormat:@"$%d",[item valueInDollar]]];
+        [cell.imageView setImage:[item thumbnail]];
+    }
 
     return  cell;
     

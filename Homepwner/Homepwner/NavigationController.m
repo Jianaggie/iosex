@@ -15,16 +15,16 @@
     if([[UIDevice currentDevice]userInterfaceIdiom ]==UIUserInterfaceIdiomPad)
         return YES;
     else
-        return NO;
-        //return YES;
+        //return NO;
+        return YES;
 }
 -(NSUInteger)supportedInterfaceOrientations
 {
     if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
         return UIInterfaceOrientationMaskAll;
     else
-         return UIInterfaceOrientationMaskPortrait;
-        //return UIInterfaceOrientationMaskAll;
+         //return UIInterfaceOrientationMaskPortrait;
+        return UIInterfaceOrientationMaskAll;
     
 }
 @end

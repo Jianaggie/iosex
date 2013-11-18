@@ -21,9 +21,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.imageView setImage:[UIImage imageNamed:@"P1040484"]];
     self.scrollView.contentSize = self.imageView.image.size;
     self.imageView.frame = CGRectMake(0, 0, self.imageView.image.size.width, self.imageView.image.size.height);
     self.scrollView.delegate = self;
+    
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{

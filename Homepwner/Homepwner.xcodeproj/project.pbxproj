@@ -13,6 +13,8 @@
 		3D2019D918254A8C00812BC2 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D818254A8C00812BC2 /* HeaderView.xib */; };
 		3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2019DB18275F1200812BC2 /* DetailViewController.m */; };
 		3D2019DE18275F1200812BC2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019DC18275F1200812BC2 /* DetailViewController.xib */; };
+		3D244BD1182BC381008EAACB /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D244BD0182BC381008EAACB /* HomepwnerItemCell.m */; };
+		3D244BD3182BC429008EAACB /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D244BD2182BC429008EAACB /* HomepwnerItemCell.xib */; };
 		3D3289B71829D9D5002024F1 /* DetailviewController-ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */; };
 		3D3289BD1829F8AA002024F1 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3289BC1829F8AA002024F1 /* NavigationController.m */; };
 		3D3289C01829FB2C002024F1 /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3289BF1829FB2C002024F1 /* ImagePicker.m */; };
@@ -26,9 +28,15 @@
 		3D43EF45181E96CB007432BE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D43EF44181E96CB007432BE /* Default@2x.png */; };
 		3D43EF47181E96CB007432BE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D43EF46181E96CB007432BE /* Default-568h@2x.png */; };
 		3D43EF4F181E9D4E007432BE /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43EF4E181E9D4E007432BE /* ItemsViewController.m */; };
-		3D43EF52181EA555007432BE /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43EF51181EA555007432BE /* BNRItem.m */; };
+		3D5808B718335185005EE59E /* imageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5808B518335185005EE59E /* imageViewController.m */; };
+		3D5808B818335185005EE59E /* imageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5808B618335185005EE59E /* imageViewController.xib */; };
+		3D5808BB1833728B005EE59E /* TemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5808BA1833728B005EE59E /* TemplateCell.m */; };
+		3D5808BD1833A5A1005EE59E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5808BC1833A5A1005EE59E /* CoreData.framework */; };
+		3D5808C01833A7F9005EE59E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D5808BE1833A7F9005EE59E /* Model.xcdatamodeld */; };
 		3D6D814218289787007A920D /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D814118289787007A920D /* BNRImageStore.m */; };
 		3D6D81441828C74F007A920D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6D81431828C74F007A920D /* CoreFoundation.framework */; };
+		3DA373B71839DFC500C238F9 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA373B61839DFC500C238F9 /* BNRItem.m */; };
+		3DA373BA183A18D300C238F9 /* AssetTypePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA373B9183A18D300C238F9 /* AssetTypePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,9 @@
 		3D2019DA18275F1200812BC2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3D2019DB18275F1200812BC2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3D2019DC18275F1200812BC2 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3D244BCF182BC381008EAACB /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepwnerItemCell.h; sourceTree = SOURCE_ROOT; };
+		3D244BD0182BC381008EAACB /* HomepwnerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepwnerItemCell.m; sourceTree = SOURCE_ROOT; };
+		3D244BD2182BC429008EAACB /* HomepwnerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomepwnerItemCell.xib; sourceTree = "<group>"; };
 		3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailviewController-ipad.xib"; sourceTree = "<group>"; };
 		3D3289BB1829F8AA002024F1 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		3D3289BC1829F8AA002024F1 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
@@ -60,11 +71,20 @@
 		3D43EF46181E96CB007432BE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3D43EF4D181E9D4E007432BE /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
 		3D43EF4E181E9D4E007432BE /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
-		3D43EF50181EA555007432BE /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
-		3D43EF51181EA555007432BE /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		3D5808B418335185005EE59E /* imageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imageViewController.h; path = ../imageViewController.h; sourceTree = "<group>"; };
+		3D5808B518335185005EE59E /* imageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = imageViewController.m; path = ../imageViewController.m; sourceTree = "<group>"; };
+		3D5808B618335185005EE59E /* imageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = imageViewController.xib; path = ../imageViewController.xib; sourceTree = "<group>"; };
+		3D5808B91833728B005EE59E /* TemplateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateCell.h; sourceTree = "<group>"; };
+		3D5808BA1833728B005EE59E /* TemplateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateCell.m; sourceTree = "<group>"; };
+		3D5808BC1833A5A1005EE59E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3D5808BF1833A7F9005EE59E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3D6D814018289787007A920D /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
 		3D6D814118289787007A920D /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
 		3D6D81431828C74F007A920D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3DA373B51839DFC500C238F9 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		3DA373B61839DFC500C238F9 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		3DA373B8183A18D300C238F9 /* AssetTypePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTypePicker.h; sourceTree = "<group>"; };
+		3DA373B9183A18D300C238F9 /* AssetTypePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTypePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5808BD1833A5A1005EE59E /* CoreData.framework in Frameworks */,
 				3D6D81441828C74F007A920D /* CoreFoundation.framework in Frameworks */,
 				3D43EF31181E96CB007432BE /* UIKit.framework in Frameworks */,
 				3D43EF33181E96CB007432BE /* Foundation.framework in Frameworks */,
@@ -103,6 +124,7 @@
 		3D43EF2F181E96CB007432BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D5808BC1833A5A1005EE59E /* CoreData.framework */,
 				3D43EF30181E96CB007432BE /* UIKit.framework */,
 				3D43EF32181E96CB007432BE /* Foundation.framework */,
 				3D43EF34181E96CB007432BE /* CoreGraphics.framework */,
@@ -118,13 +140,17 @@
 				3D43EF37181E96CB007432BE /* Supporting Files */,
 				3D43EF4D181E9D4E007432BE /* ItemsViewController.h */,
 				3D43EF4E181E9D4E007432BE /* ItemsViewController.m */,
-				3D43EF50181EA555007432BE /* BNRItem.h */,
-				3D43EF51181EA555007432BE /* BNRItem.m */,
 				3D2019D11822939A00812BC2 /* BNRItemStore.h */,
+				3D5808B418335185005EE59E /* imageViewController.h */,
+				3D5808B518335185005EE59E /* imageViewController.m */,
+				3D5808B618335185005EE59E /* imageViewController.xib */,
 				3D2019D21822939A00812BC2 /* BNRItemStore.m */,
 				3D2019D818254A8C00812BC2 /* HeaderView.xib */,
 				3D2019DA18275F1200812BC2 /* DetailViewController.h */,
 				3D2019DB18275F1200812BC2 /* DetailViewController.m */,
+				3D244BCF182BC381008EAACB /* HomepwnerItemCell.h */,
+				3D244BD0182BC381008EAACB /* HomepwnerItemCell.m */,
+				3D244BD2182BC429008EAACB /* HomepwnerItemCell.xib */,
 				3D2019DC18275F1200812BC2 /* DetailViewController.xib */,
 				3D6D814018289787007A920D /* BNRImageStore.h */,
 				3D6D814118289787007A920D /* BNRImageStore.m */,
@@ -133,6 +159,13 @@
 				3D3289BC1829F8AA002024F1 /* NavigationController.m */,
 				3D3289BE1829FB2C002024F1 /* ImagePicker.h */,
 				3D3289BF1829FB2C002024F1 /* ImagePicker.m */,
+				3D5808B91833728B005EE59E /* TemplateCell.h */,
+				3D5808BA1833728B005EE59E /* TemplateCell.m */,
+				3D5808BE1833A7F9005EE59E /* Model.xcdatamodeld */,
+				3DA373B51839DFC500C238F9 /* BNRItem.h */,
+				3DA373B61839DFC500C238F9 /* BNRItem.m */,
+				3DA373B8183A18D300C238F9 /* AssetTypePicker.h */,
+				3DA373B9183A18D300C238F9 /* AssetTypePicker.m */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -205,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5808B818335185005EE59E /* imageViewController.xib in Resources */,
+				3D244BD3182BC429008EAACB /* HomepwnerItemCell.xib in Resources */,
 				3D43EF3B181E96CB007432BE /* InfoPlist.strings in Resources */,
 				3D43EF43181E96CB007432BE /* Default.png in Resources */,
 				3D3289B71829D9D5002024F1 /* DetailviewController-ipad.xib in Resources */,
@@ -227,11 +262,16 @@
 				3D43EF3D181E96CB007432BE /* main.m in Sources */,
 				3D43EF41181E96CB007432BE /* HomepwnerAppDelegate.m in Sources */,
 				3D43EF4F181E9D4E007432BE /* ItemsViewController.m in Sources */,
-				3D43EF52181EA555007432BE /* BNRItem.m in Sources */,
+				3D5808B718335185005EE59E /* imageViewController.m in Sources */,
+				3DA373B71839DFC500C238F9 /* BNRItem.m in Sources */,
+				3D5808BB1833728B005EE59E /* TemplateCell.m in Sources */,
 				3D2019D31822939A00812BC2 /* BNRItemStore.m in Sources */,
 				3D3289BD1829F8AA002024F1 /* NavigationController.m in Sources */,
+				3DA373BA183A18D300C238F9 /* AssetTypePicker.m in Sources */,
+				3D244BD1182BC381008EAACB /* HomepwnerItemCell.m in Sources */,
 				3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */,
 				3D6D814218289787007A920D /* BNRImageStore.m in Sources */,
+				3D5808C01833A7F9005EE59E /* Model.xcdatamodeld in Sources */,
 				3D3289C01829FB2C002024F1 /* ImagePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D5808BE1833A7F9005EE59E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D5808BF1833A7F9005EE59E /* Model.xcdatamodel */,
+			);
+			currentVersion = 3D5808BF1833A7F9005EE59E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D43EF25181E96CB007432BE /* Project object */;
 }
