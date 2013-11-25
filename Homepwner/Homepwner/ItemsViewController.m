@@ -43,7 +43,9 @@
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if(self){
-        [self.navigationItem setTitle:@"Homepwner"];
+        
+        [self.navigationController setTitle:NSLocalizedString(@"Homepwner", "the name of application")];
+        //[self.navigationItem setTitle:@"Homepwner"];
        /* for(int i =0 ;i<5;i++)
         {
             [[BNRItemStore sharedStore]createItem];
@@ -249,7 +251,8 @@ else{
         {
             [cell.valueLable setTextColor:[UIColor redColor]];
         }
-        [cell.valueLable  setText:[NSString stringWithFormat:@"$%d",[item valueInDollar]]];
+        NSString * currency = [[NSLocale currentLocale]objectForKey:NSLocaleCurrencySymbol];
+        [cell.valueLable  setText:[NSString stringWithFormat:@"%@%d",currency,[item valueInDollar]]];
         [cell.imageView setImage:[item thumbnail]];
     }
 

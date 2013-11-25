@@ -12,7 +12,6 @@
 		3D2019D71825439200812BC2 /* mypic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D61825439200812BC2 /* mypic2.jpg */; };
 		3D2019D918254A8C00812BC2 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019D818254A8C00812BC2 /* HeaderView.xib */; };
 		3D2019DD18275F1200812BC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2019DB18275F1200812BC2 /* DetailViewController.m */; };
-		3D2019DE18275F1200812BC2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2019DC18275F1200812BC2 /* DetailViewController.xib */; };
 		3D244BD1182BC381008EAACB /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D244BD0182BC381008EAACB /* HomepwnerItemCell.m */; };
 		3D244BD3182BC429008EAACB /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D244BD2182BC429008EAACB /* HomepwnerItemCell.xib */; };
 		3D3289B71829D9D5002024F1 /* DetailviewController-ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */; };
@@ -37,6 +36,8 @@
 		3D6D81441828C74F007A920D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6D81431828C74F007A920D /* CoreFoundation.framework */; };
 		3DA373B71839DFC500C238F9 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA373B61839DFC500C238F9 /* BNRItem.m */; };
 		3DA373BA183A18D300C238F9 /* AssetTypePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA373B9183A18D300C238F9 /* AssetTypePicker.m */; };
+		3DA373D2183CEF5800C238F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DA373D4183CEF5800C238F9 /* Localizable.strings */; };
+		3DA373E8183D05DB00C238F9 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA373E7183D05DB00C238F9 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,6 @@
 		3D2019D818254A8C00812BC2 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		3D2019DA18275F1200812BC2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3D2019DB18275F1200812BC2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		3D2019DC18275F1200812BC2 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		3D244BCF182BC381008EAACB /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepwnerItemCell.h; sourceTree = SOURCE_ROOT; };
 		3D244BD0182BC381008EAACB /* HomepwnerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepwnerItemCell.m; sourceTree = SOURCE_ROOT; };
 		3D244BD2182BC429008EAACB /* HomepwnerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomepwnerItemCell.xib; sourceTree = "<group>"; };
@@ -85,6 +85,10 @@
 		3DA373B61839DFC500C238F9 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		3DA373B8183A18D300C238F9 /* AssetTypePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTypePicker.h; sourceTree = "<group>"; };
 		3DA373B9183A18D300C238F9 /* AssetTypePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTypePicker.m; sourceTree = "<group>"; };
+		3DA373CA183CA93500C238F9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DA373D6183CEFA700C238F9 /* es */ = {isa = PBXFileReference; lastKnownFileType = file; lineEnding = 0; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DA373E6183D032F00C238F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DA373E7183D05DB00C238F9 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 		3D43EF36181E96CB007432BE /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				3DA373E7183D05DB00C238F9 /* DetailViewController.xib */,
+				3DA373D4183CEF5800C238F9 /* Localizable.strings */,
 				3D43EF3F181E96CB007432BE /* HomepwnerAppDelegate.h */,
 				3D43EF40181E96CB007432BE /* HomepwnerAppDelegate.m */,
 				3D43EF37181E96CB007432BE /* Supporting Files */,
@@ -151,7 +157,6 @@
 				3D244BCF182BC381008EAACB /* HomepwnerItemCell.h */,
 				3D244BD0182BC381008EAACB /* HomepwnerItemCell.m */,
 				3D244BD2182BC429008EAACB /* HomepwnerItemCell.xib */,
-				3D2019DC18275F1200812BC2 /* DetailViewController.xib */,
 				3D6D814018289787007A920D /* BNRImageStore.h */,
 				3D6D814118289787007A920D /* BNRImageStore.m */,
 				3D3289B61829D9D5002024F1 /* DetailviewController-ipad.xib */,
@@ -222,6 +227,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
+				Base,
 			);
 			mainGroup = 3D43EF24181E96CB007432BE;
 			productRefGroup = 3D43EF2E181E96CB007432BE /* Products */;
@@ -239,16 +246,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5808B818335185005EE59E /* imageViewController.xib in Resources */,
+				3DA373D2183CEF5800C238F9 /* Localizable.strings in Resources */,
 				3D244BD3182BC429008EAACB /* HomepwnerItemCell.xib in Resources */,
 				3D43EF3B181E96CB007432BE /* InfoPlist.strings in Resources */,
 				3D43EF43181E96CB007432BE /* Default.png in Resources */,
 				3D3289B71829D9D5002024F1 /* DetailviewController-ipad.xib in Resources */,
 				3D43EF45181E96CB007432BE /* Default@2x.png in Resources */,
+				3DA373E8183D05DB00C238F9 /* DetailViewController.xib in Resources */,
 				3D43EF47181E96CB007432BE /* Default-568h@2x.png in Resources */,
 				3D2019D5182542CA00812BC2 /* mypic.jpg in Resources */,
 				3D2019D71825439200812BC2 /* mypic2.jpg in Resources */,
 				3D2019D918254A8C00812BC2 /* HeaderView.xib in Resources */,
-				3D2019DE18275F1200812BC2 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +291,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D43EF3A181E96CB007432BE /* en */,
+				3DA373CA183CA93500C238F9 /* es */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DA373D4183CEF5800C238F9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DA373D6183CEFA700C238F9 /* es */,
+				3DA373E6183D032F00C238F9 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
