@@ -19,6 +19,9 @@
 		3DA374111842EF5300C238F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA373F91842EF5300C238F9 /* UIKit.framework */; };
 		3DA374191842EF5300C238F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DA374171842EF5300C238F9 /* InfoPlist.strings */; };
 		3DA3741B1842EF5300C238F9 /* TouchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3741A1842EF5300C238F9 /* TouchTrackerTests.m */; };
+		3DA374261842F00600C238F9 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA374251842F00600C238F9 /* Line.m */; };
+		3DA374291842F09700C238F9 /* TouchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA374281842F09700C238F9 /* TouchDrawView.m */; };
+		3DA3742C1842F24000C238F9 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3742B1842F24000C238F9 /* TouchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		3DA374161842EF5300C238F9 /* TouchTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		3DA374181842EF5300C238F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3DA3741A1842EF5300C238F9 /* TouchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerTests.m; sourceTree = "<group>"; };
+		3DA374241842F00600C238F9 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		3DA374251842F00600C238F9 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		3DA374271842F09700C238F9 /* TouchDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDrawView.h; sourceTree = "<group>"; };
+		3DA374281842F09700C238F9 /* TouchDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDrawView.m; sourceTree = "<group>"; };
+		3DA3742A1842F24000C238F9 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
+		3DA3742B1842F24000C238F9 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,12 @@
 				3DA374051842EF5300C238F9 /* AppDelegate.m */,
 				3DA374071842EF5300C238F9 /* Images.xcassets */,
 				3DA373FC1842EF5300C238F9 /* Supporting Files */,
+				3DA374241842F00600C238F9 /* Line.h */,
+				3DA374251842F00600C238F9 /* Line.m */,
+				3DA374271842F09700C238F9 /* TouchDrawView.h */,
+				3DA374281842F09700C238F9 /* TouchDrawView.m */,
+				3DA3742A1842F24000C238F9 /* TouchViewController.h */,
+				3DA3742B1842F24000C238F9 /* TouchViewController.m */,
 			);
 			path = TouchTracker;
 			sourceTree = "<group>";
@@ -240,6 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA374061842EF5300C238F9 /* AppDelegate.m in Sources */,
+				3DA3742C1842F24000C238F9 /* TouchViewController.m in Sources */,
+				3DA374261842F00600C238F9 /* Line.m in Sources */,
+				3DA374291842F09700C238F9 /* TouchDrawView.m in Sources */,
 				3DA374021842EF5300C238F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
