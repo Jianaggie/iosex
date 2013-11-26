@@ -25,6 +25,7 @@
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
+    NSLog(@"save data");
     [self.myview saveChanges];
 }
 @end
