@@ -17,6 +17,8 @@
 		3D407F8A179EBD0E00D6B7A0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D407F89179EBD0E00D6B7A0 /* Default@2x.png */; };
 		3D407F8C179EBD0E00D6B7A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D407F8B179EBD0E00D6B7A0 /* Default-568h@2x.png */; };
 		3D407F94179EBD6C00D6B7A0 /* hyposister.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D407F93179EBD6C00D6B7A0 /* hyposister.m */; };
+		3DA3742E184599DF00C238F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA3742D184599DF00C238F9 /* QuartzCore.framework */; };
+		3DA374301845BB8B00C238F9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3742F1845BB8B00C238F9 /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		3D407F8B179EBD0E00D6B7A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3D407F92179EBD6C00D6B7A0 /* hyposister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hyposister.h; sourceTree = "<group>"; };
 		3D407F93179EBD6C00D6B7A0 /* hyposister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hyposister.m; sourceTree = "<group>"; };
+		3DA3742D184599DF00C238F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3DA3742F1845BB8B00C238F9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA3742E184599DF00C238F9 /* QuartzCore.framework in Frameworks */,
 				3D407F76179EBD0E00D6B7A0 /* UIKit.framework in Frameworks */,
 				3D407F78179EBD0E00D6B7A0 /* Foundation.framework in Frameworks */,
 				3D407F7A179EBD0E00D6B7A0 /* CoreGraphics.framework in Frameworks */,
@@ -71,6 +76,7 @@
 		3D407F74179EBD0E00D6B7A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DA3742D184599DF00C238F9 /* QuartzCore.framework */,
 				3D407F75179EBD0E00D6B7A0 /* UIKit.framework */,
 				3D407F77179EBD0E00D6B7A0 /* Foundation.framework */,
 				3D407F79179EBD0E00D6B7A0 /* CoreGraphics.framework */,
@@ -83,6 +89,7 @@
 			children = (
 				3D407F84179EBD0E00D6B7A0 /* hyposisterAppDelegate.h */,
 				3D407F85179EBD0E00D6B7A0 /* hyposisterAppDelegate.m */,
+				3DA3742F1845BB8B00C238F9 /* 1.jpg */,
 				3D407F7C179EBD0E00D6B7A0 /* Supporting Files */,
 				3D407F92179EBD6C00D6B7A0 /* hyposister.h */,
 				3D407F93179EBD6C00D6B7A0 /* hyposister.m */,
@@ -159,6 +166,7 @@
 				3D407F80179EBD0E00D6B7A0 /* InfoPlist.strings in Resources */,
 				3D407F88179EBD0E00D6B7A0 /* Default.png in Resources */,
 				3D407F8A179EBD0E00D6B7A0 /* Default@2x.png in Resources */,
+				3DA374301845BB8B00C238F9 /* 1.jpg in Resources */,
 				3D407F8C179EBD0E00D6B7A0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +295,7 @@
 				3D407F91179EBD0E00D6B7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

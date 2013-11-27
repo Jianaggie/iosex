@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <QuartzCore/QuartzCore.h>
 @interface hyposister : UIView
+{
+    CALayer * layer;
+}
 @property (nonatomic,strong) UIColor* circlecolor;
 @end

@@ -16,8 +16,39 @@
     if(self){
         [self setBackgroundColor:[UIColor clearColor]];
         [self setCirclecolor:[UIColor blackColor]];
+        layer =[[CALayer alloc]init];
+        [layer setBounds:CGRectMake(0, 0, 85, 85)];
+        [layer setPosition:CGPointMake(100, 100)];
+        UIColor * redish = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5];
+        CGColorRef red = [redish CGColor];
+        [layer setBackgroundColor:red];
+        // set content
+        UIImage * image = [UIImage imageNamed:@"1.jpg"];
+        CGImageRef  img =[image CGImage];
+        [layer setContents:(__bridge id)img];
+        //[layer setContentsRect:CGRectMake(-1, -1, 1.2, 1.2)];
+        //[layer setContentsGravity:kCAGravityResizeAspect];
+        
+        [self.layer addSublayer:layer];
     }
     return  self;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch * touch =[touches anyObject];
+    CGPoint loc =[touch locationInView:self];
+    [layer setPosition:loc];
+}
+-(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch * touch =[touches anyObject];
+    CGPoint loc =[touch locationInView:self];
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    [layer setPosition:loc];
+    
+    [CATransaction commit];
+    
 }
 -(BOOL) canBecomeFirstResponder
 {
@@ -59,6 +90,12 @@
     CGColorRef color =[[UIColor blueColor ]CGColor];
     CGContextSetShadowWithColor(ctx, offset, 2, color);
     [text drawInRect:textRect withFont:font];
+    CABasicAnimation * animation= [CABasicAnimation animationWithKeyPath:@"position"];
+    [animation setFromValue:[NSValue valueWithCGPoint:CGPointZero]];
+    [animation setToValue:[NSValue valueWithCGPoint:CGPointMake(100, 100)]];
+    [animation setDuration:2.0];
+    [layer addAnimation:animation forKey:@"annimation"];
+    
     
 }
 @end

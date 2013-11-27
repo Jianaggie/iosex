@@ -12,6 +12,16 @@
 @implementation TouchDrawView
 
 @synthesize selectedLine;
+-(int) numberOfLines
+{
+    int count=0;
+    if(LinesInProcess&& completeLines)
+    {
+        count = [LinesInProcess count]+[completeLines count];
+    }
+    return  count;
+}
+
 -(id)initWithFrame:(CGRect)frame
 {
     self=[super initWithFrame:frame];
@@ -82,7 +92,7 @@
 }
 -(void)longPress:(UIGestureRecognizer *) gr
 {
-   
+  // NSLog(<#NSString *format, ...#>)
     if (gr.state ==UIGestureRecognizerStateBegan) {
         NSLog(@"press state is begin ");
         CGPoint loc=[gr locationInView:self];
@@ -208,7 +218,7 @@
         CGContextAddLineToPoint(context, selectedLine.end.x, selectedLine.end.y);
         CGContextStrokePath(context);
     }
-    
+   
 }
 
 
@@ -219,7 +229,7 @@
     {
         if([touch tapCount]>1)
         {
-           // [self clearAll];
+           [self clearAll];
             return;
         }
         //deal with the touch
@@ -237,6 +247,8 @@
                 //deal with the touch
         NSValue * key =[NSValue valueWithNonretainedObject:touch];
         Line  * line =[LinesInProcess objectForKey:key];
+        if(line ==nil)
+            NSLog(@"line is nil");
         line.end = [touch locationInView:self];
         
 
@@ -256,6 +268,7 @@
             line.end = [touch locationInView:self];
             [completeLines addObject:line];
             [LinesInProcess removeObjectForKey:key];
+            [line setContainingArray:completeLines];
         }
         
         
@@ -274,6 +287,7 @@
 -(void)clearAll
 {
     [completeLines removeAllObjects];
+    //completeLines =[[NSMutableArray alloc]init];
     [LinesInProcess removeAllObjects];
     [self setNeedsDisplay];
 }

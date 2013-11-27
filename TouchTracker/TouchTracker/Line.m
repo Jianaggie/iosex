@@ -9,7 +9,7 @@
 #import "Line.h"
 
 @implementation Line
-@synthesize begin,end;
+@synthesize begin,end,containingArray;
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super init];

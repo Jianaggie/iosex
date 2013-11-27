@@ -28,4 +28,5 @@
 -(void)setColor:(UIColor *)color;
 -(void)swipeMove:(UISwipeGestureRecognizer *)swipe;
 -(void)delete;
+-(int) numberOfLines;
 @end
